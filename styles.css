@@ -83,6 +83,7 @@ header {
   justify-content: center;
   align-items: center;
 }
+
 @media (max-width: 550px) {
   #nuWeb {
     width: 80%;
@@ -92,6 +93,7 @@ header {
     width: 80%;
   }
 }
+
 #dorl {
   position: absolute;
   left: 95%;
@@ -139,6 +141,7 @@ header {
   margin-left: 5%;
   margin-right: 5%;
 }
+
 @media (max-width: 600px) {
   .pesquisameio {
     margin-top: 30px;
@@ -178,6 +181,12 @@ header {
   top: 37%;
   left: 80%;
 }
+.duracao-pp {
+  position: absolute;
+  top: 37%;
+  left: 80%;
+  color: #b5b9be;
+}
 .tempo {
   display: flex;
   justify-content: right;
@@ -188,6 +197,11 @@ header {
 .tituloesub {
   margin-left: 16px;
   margin-top: 20px;
+}
+.tituloesub-pp {
+  margin-left: 16px;
+  margin-top: 20px;
+  color: #a5a9af;
 }
 
 .sub {
@@ -206,4 +220,24 @@ header {
   .titulo {
     font-size: 13px;
   }
+}
+
+.tempo-active {
+  color: #babec7;
+}
+
+.s {
+}
+.s-activ {
+  background-color: rgb(15, 16, 31);
+}
+
+#darkbtn {
+  float: right;
+  border: 1px #2d3748;
+  background-color: #b0b5c0;
+  width: 50px;
+  height: 25px;
+  text-align: center;
+  border-radius: 5px;
 }
