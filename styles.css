@@ -10,7 +10,8 @@
   outline-style: none;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -25,19 +26,26 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-body, input, textarea, select, button {
-  font: 500 1rem 'Poppins', sans-serif;
+body,
+input,
+textarea,
+select,
+button {
+  font: 500 1rem "Poppins", sans-serif;
   letter-spacing: 0.03rem;
-  color: #2D3748;
+  color: #2d3748;
 }
 
-a, button, input {
+a,
+button,
+input {
   border: none;
   background: transparent;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-a, button {
+a,
+button {
   cursor: pointer;
 }
 
@@ -50,8 +58,6 @@ p {
   margin: 0 !important;
 }
 
-
-
 body {
   background-color: #f1f3f6;
 }
@@ -63,7 +69,7 @@ body {
   border-color: #b3bbc8;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
   .barrinha {
     height: 52px;
     border-left: 2px solid;
@@ -76,20 +82,23 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  
 }
-@media (max-width:550px) {
-  #nuWeb{
- width: 80%;
- margin-left: 15%;
-
+@media (max-width: 550px) {
+  #nuWeb {
+    width: 80%;
+    margin-left: 15%;
+  }
+  #spotify {
+    width: 80%;
+  }
 }
-#spotify{
-  width: 80%;
+#dorl {
+  position: absolute;
+  left: 95%;
+  width: 55px;
+  height: 35px;
+  border: none;
 }
-}
-
 
 #btn {
   border: none;
@@ -102,43 +111,36 @@ header {
 }
 
 #pesquisar {
-  width: 22cm;
+  width: 61vw;
   height: 39px;
   border-width: 1px;
   border-radius: 8px;
   border: 1px solid #bcc4cf;
-  background-color: white
-  
+  background-color: white;
+  padding-left: 1rem;
 }
 
-@media (max-width:750px)  and (max-width: 700px) {
- 
- 
- #pesquisar {
+@media (max-width: 750px) and (max-width: 700px) {
+  #pesquisar {
     width: 65%;
     height: 39px;
     border-width: 1px;
     border-radius: 8px;
     border: 1px solid #bcc4cf;
-    background-color: white
+    background-color: white;
+    padding-left: 1rem;
   }
-
-
-
 }
 
-
 .pesquisameio {
-
   display: flex;
   align-items: center;
   justify-content: center;
   margin-left: 5%;
   margin-right: 5%;
 }
-@media (max-width:600px) {
+@media (max-width: 600px) {
   .pesquisameio {
-  
     margin-top: 30px;
     display: flex;
     align-items: center;
@@ -147,73 +149,61 @@ header {
 }
 
 .image {
-
   width: 75px;
   height: 75px;
   margin-bottom: 40px;
   border-radius: 15px;
   display: flex;
- 
-  
 }
 
-.music{
- display: flex;
- justify-content: center;
- margin-top: 3%;
- margin-right:46%;
- 
- 
-
-  
+.music {
+  display: flex;
+  justify-content: center;
+  margin-top: 46px;
+  margin-right: 46%;
 }
-@media  (max-width:600px){
-  .music{
-    position: absolute;
-    top: 30%;
-    left: 12mm;
-    margin-left: 1%;
-    
+
+@media (max-width: 1000px) {
+  .music {
+    display: flex;
+    justify-content: center;
+    margin-top: 46px;
+    margin-right: 46%;
+    margin-left: 10%;
   }
-
-
-  
 }
 
-.duracao{
-   position: absolute;
-  
-   top: 37%;
- left: 80%;
+.duracao {
+  position: absolute;
+  top: 37%;
+  left: 80%;
 }
-.tempo{
-display: flex;
-justify-content: right;
- font-size: 16px;
-margin-bottom: 95px;
-
-
+.tempo {
+  display: flex;
+  justify-content: right;
+  font-size: 16px;
+  margin-bottom: 95px;
 }
 
-
-
-.tituloesub{
-
-margin-left: 16px;
-margin-top: 20px;
-
+.tituloesub {
+  margin-left: 16px;
+  margin-top: 20px;
 }
 
-
-.sub{
+.sub {
   margin-bottom: 80px;
-
-
 }
-@media(max-width:600px){
-  .sub{
-    margin-bottom:62px;
-  
+
+@media (max-width: 600px) {
+  .tituloesub {
+    margin-left: 16px;
+    margin-top: 10px;
+  }
+  .sub {
+    margin-bottom: 47px;
+    font-size: 10px;
+  }
+  .titulo {
+    font-size: 13px;
   }
 }
-
