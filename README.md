@@ -47,4 +47,4 @@ Fique à vontade para adicionar novas funcionalidades, por exemplo player funcio
 
 ## Aprendizado
 
-Foi muito bom, esse desafio me fez aprendi tecnologias diferentes que nunca tinha testado antes, aprendi mais CSS, HTML, JS. Apesar de não ter cumprido totalmente, pórem foi muito bom!
+Foi muito bom, esse desafio me fez aprendi tecnologias diferentes que nunca tinha testado antes, aprendi mais CSS, HTML, JS. Apesar de não ter cumprido totalmente, foi muito bom!
