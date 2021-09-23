@@ -1,13 +1,4 @@
-/*async function getContent() {
-  try {
-    const dado = await fetch("https://nuweb.vercel.app/api/NuwebPlay");
-    const data = await dado.json();
-  } catch (error) {
-    console.log("DEU ERRO");
-  }
 
-  getContent();
-}*/
 
 function dark() {
   const fundo = document.querySelector(".s");
@@ -20,25 +11,9 @@ function dark() {
   pesquisa.classList.add("pesquisar-pp");
 }
 
-async function clica() {
-  try {
-    var teste = document.querySelector(".list");
-    const request = await fetch("https://nuweb.vercel.app/api/NuwebPlay").then(
-      (e) => e.json()
-    );
 
-    for (var index = 0; index < 50; index++) {
-      teste.innerHTML +=
-        '<li id="testzin">' +
-        request.items[index].track.album.artists[0].name +
-        "</li>";
-      // document.getElementById('teste').innerHTML += request.items[index].track.album.artists[0].name;
-    }
-  } catch (error) {
-    console.log(error);
-  }
-}
 window.onload = clica;
+
 async function clica() {
   try {
     var testeq = document.querySelector(".music");
@@ -46,12 +21,10 @@ async function clica() {
     var teste1 = document.querySelector(".sub");
     var teste2 = document.querySelector(".duracao");
 
-    const request = await fetch("https://nuweb.vercel.app/api/NuwebPlay").then(
-      (e) => e.json()
-    );
+    const request = await fetch("https://nuweb.vercel.app/api/NuwebPlay").then((e) => e.json());
 
     for (var index = 0; index < 50; index++) {
-      var imagem = request.items[index].track.album.images[0].url;
+           var imagem = request.items[index].track.album.images[0].url;
       var linkspotify =
         request.items[index].track.album.artists[0].external_urls.spotify;
       var minutes = Math.floor(request.items[index].track.duration_ms / 60000);
@@ -59,24 +32,24 @@ async function clica() {
         (request.items[index].track.duration_ms % 60000) /
         1000
       ).toFixed(0);
-      // testeq.innerHTML += '<section class="musics"><ul><img class="image"  src="'+request.items[index].track.album.images[0].url+'"/></ul></section>';
-      teste.innerHTML +=
-        '<section class="music"><ul><a href="' +
-        linkspotify +
-        '"><img class="image"  src="' +
-        imagem +
-        '"/></a></ul><div class="tituloesub"><ul><h4 class="titulo">' +
-        request.items[index].track.album.artists[0].name +
-        '</h4><h5 class="sub">' +
-        request.items[index].track.name +
-        "</h5></ul></div></section>";
 
-      teste2.innerHTML +=
-        ' </ul><h4 class="tempo">' +
-        `${minutes}:${seconds < 10 ? "0" : ""}${seconds}`;
-      +"<h4></ul>";
-      //teste1.innerHTML +='<div class="tituloesub"><ul></ul></div>';
+        teste.innerHTML +=
+          '<div class="music"><ul><div class="musicimagename"><div class="musictime" ><a href="' +
+          "https://www.spotify.com/br/" +
+          '"><img class="image"  src="' +
+          imagem +
+          '"/></a><div class="nametime"><h4 class="titulo">' +
+                request.items[index].track.album.artists[0].name+
+          '</h4><h5 class="sub">' +
+          request.items[index].track.name +
+          "</h5></div></div>"+ '<div class="time">  <h4 class="tempo">' +
+         `${minutes}:${seconds < 10 ? "0" : ""}${seconds}` +
+          "<h4></ul></div></div></div>";
+        //teste1.innerHTML +='<div class="tituloesub"><ul></ul></div>';
+      
     }
+
+    // testeq.innerHTML += '<section class="musics"><ul><img class="image"  src="' requestpesquisa.items[index].track.album.images[0].url+'"/></ul></section>';
   } catch (error) {
     console.log(error);
   }
